@@ -31,9 +31,8 @@
 /* The "Depth of Field" Floating Card Style */
 .floater {
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  opacity: 0.3; /* Lower default opacity so they recede more */
+  opacity: 0.3;
   filter: grayscale(100%) blur(2px);
-  transform: scale(0.9);
   z-index: 10;
 }
 
@@ -69,4 +68,19 @@ input:-webkit-autofill:active {
   .font-instrument-serif {
     font-family: 'Instrument Serif', serif !important;
   }
+}
+@keyframes floatY {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.float-css {
+  animation: floatY 6s ease-in-out infinite;
 }

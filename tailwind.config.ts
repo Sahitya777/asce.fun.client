@@ -27,16 +27,17 @@ const config: Config = {
         'float-fast': 'float 7s ease-in-out 2s infinite',
         'float-reverse': 'float-reverse 9s ease-in-out 3s infinite',
       },
-      keyframes: {
-        float: {
-          '0%, 100%': { transform: 'translateY(0)' },
-          '50%': { transform: 'translateY(-20px)' },
-        },
-        'float-reverse': {
-          '0%, 100%': { transform: 'translateY(0)' },
-          '50%': { transform: 'translateY(20px)' },
-        }
-      }
+keyframes: {
+  float: {
+    '0%, 100%': { transform: 'translateY(0) scale(0.9)' },
+    '50%': { transform: 'translateY(-20px) scale(0.9)' },
+  },
+  'float-reverse': {
+    '0%, 100%': { transform: 'translateY(0) scale(0.9)' },
+    '50%': { transform: 'translateY(20px) scale(0.9)' },
+  },
+}
+
     },
   },
   plugins: [],
